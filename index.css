@@ -1,0 +1,354 @@
+body {
+    background: #f0f0f0;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 80px;
+    background-color: white;
+    font-size: 16px;
+    box-shadow: 0px 0px 1px 0px;
+}
+
+nav img {
+    width: 120px;
+    height: 70px;
+    cursor: pointer;
+
+}
+
+nav div {
+    display: flex;
+    justify-content: right;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav ul li {
+    display: inline-block;
+    justify-content: space-around;
+    padding: 11px 30px 8px;
+    margin: 0px 5px;
+    list-style: none;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.4s;
+    font-weight: 500;
+
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #0a0a0a;
+}
+
+nav ul li:hover {
+    background: grey;
+    
+
+}
+
+nav ul li:hover a {
+    color: white;
+}
+
+#Heading {
+    color: black;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    padding: 60px 0px 0px;
+    padding-left: 7%;
+    background-color: #05141F;
+    color: #f0f0f0;
+    margin: unset;
+
+}
+
+.carosel {
+    display: flex;
+    flex-direction: row;
+    padding: 50px 40px;
+    flex-basis: auto;
+    justify-content: center;
+    background-color: #05141F;
+    color: #f0f0f0;
+    height: 70vh;
+
+}
+
+.detail {
+    font-size: 20px;
+    text-align: justify;
+    font-weight: 400;
+    flex-basis: 45%;
+}
+
+.detail ul {
+    padding-left: 20px;
+}
+
+.detail ul li {
+
+    list-style: none;
+    margin: 10px 0px;
+    padding: 10px 10px;
+    cursor: pointer;
+    text-align: center;
+    background-color: grey;
+    border: 1px solid grey;
+    border-radius: 20px;
+}
+
+.detail ul a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 10px 80px;
+    border-radius: 10px;
+}
+
+.detail ul li:hover {
+    background-color: transparent;
+    border: 1px solid white;
+
+}
+
+.detail ul li:hover a {
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.detail h3 {
+    font-size: 18px;
+    color: orangered;
+    padding-top: 30px;
+}
+
+.showcase {
+    flex-basis: 45%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 50vh
+}
+
+.showcase img {
+    border-radius: 5px;
+    width: 90%;
+    height: 40vh;
+
+}
+
+.showcase button {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#next:hover,
+#back:hover {
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+#next {
+    width: 15%;
+    right: 10%;
+    bottom: 0%;
+    background-color: rgba(100, 100, 100, 0.445);
+    border: 1px solid rgba(100, 100, 100, 0.432);
+    border-radius: 20px;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bolder;
+    color: white;
+    padding-bottom: 5px;
+}
+
+#back {
+    width: 15%;
+
+    left: 10%;
+    bottom: 0%;
+    background-color: rgba(100, 100, 100, 0.445);
+    border: 1px solid rgba(100, 100, 100, 0.432);
+    border-radius: 20px;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bolder;
+    color: white;
+    padding-bottom: 5px;
+
+}
+
+.Soul {
+    font-size: 18px;
+    font-style: normal;
+    padding: 30px 7%;
+    background-color: rgb(232, 241, 232);
+
+}
+
+.Soul h2 {
+    letter-spacing: .5px;
+    font-weight: 600;
+}
+
+.Soul ul li {
+    padding: 10px 0px;
+    font-size: 19px;
+    font-weight: 600;
+    list-style: none;
+
+}
+
+.Soul ul li span {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: .5px;
+}
+
+
+.trim {
+    padding: 60px 7%;
+    background-color: rgb(232, 241, 232);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+
+.varients ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.varients ul h3 {
+    font-size: 25px;
+    background-color: grey;
+    color: white;
+    padding: 15px 0px;
+    text-align: center;
+    border-radius: 5px;
+    font-style: normal;
+    cursor: pointer;
+    border: 2px solid white;
+}
+
+.varients ul li {
+    list-style: none;
+    font-weight: 600;
+    font-size: 18px;
+    font-style: italic;
+    padding: 5px 0px 5px 20px;
+
+}
+
+.trim img {
+    height: 300px;
+    padding: none;
+    margin: none;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: left;
+    padding: 60px 0px;
+}
+
+.footer a {
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    color: #0a0a0a;
+    padding-left: unset;
+    cursor: pointer;
+
+
+}
+
+.footer img {
+    width: 120px;
+    height: 80px;
+    padding: unset;
+    margin: unset;
+}
+
+.footer a img {
+    width: 25px;
+    height: 25px;
+    padding: 0px 10px;
+}
+
+
+
+
+.whatsapp {
+    position: -webkit-sticky;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    
+}
+
+
+.whatsapp a img {
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    animation: size 1s infinite ease-out;
+}
+
+@keyframes size {
+    0%{
+        width: 50px;
+        height: 50px;
+    }
+
+    25%{
+        width: 55px;
+        height: 55px;
+    }
+
+    50%{
+        width: 60px;
+        height: 60px;
+    }
+
+    75%{
+        width: 55px;
+        height: 55px;
+    }
+    
+
+    100%{
+        width: 50px;
+        height: 50px;
+    }
+}
