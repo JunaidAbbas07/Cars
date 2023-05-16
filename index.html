@@ -7,22 +7,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./index.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://kit.fontawesome.com/a9d3a0a576.js" crossorigin="anonymous"></script>
 
 </head>
 
 <body>
 
     <nav>
-
-        <!-- <h1>KIA</h1> -->
         <img src="images/Kia-Logo-2021-present.png">
         <div>
-            <ul>
+            <ul id="side-menu">
                 <li><a>Home</a></li>
                 <li><a href="index.html">Cars</a></li>
                 <li><a href="index.html">About Us</a></li>
                 <li><a href="index.html">Contact Us</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
             </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
         </div>
     </nav>
     <h1 id="Heading">
