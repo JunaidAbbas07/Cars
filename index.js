@@ -27,6 +27,17 @@ function back() {
 	}
 }
 
+const side = document.querySelector("#side-menu");
+
+function openmenu() {
+	side.style.right = "0px";
+}
+
+function closemenu() {
+	side.style.right = "-250px";
+}
+
+
 
 const options = {
 	method: 'GET',
@@ -62,7 +73,7 @@ async function Data() {
 	const tc = document.querySelector('#tc');
 	const vt = document.querySelector('#vt');
 	const vehicle = document.querySelector('#vehicle');
-	
+
 
 
 	abs.innerHTML = data.specs.anti_lock_braking_system_abs;
@@ -85,24 +96,24 @@ async function Data() {
 	vt.innerHTML = data.specs.valve_train_design;
 	vehicle.innerHTML = data.specs.vehicle_type;
 
-	
+
 
 
 
 	var objCount = data.trims.length;
 	for (var i = 0; i < objCount; i++) {
-		
+
 		const root = document.querySelector('#root');
 		const trim = document.createElement('div');
 		const varients = document.createElement('div')
 		const ul = document.createElement('ul');
 		const img = document.createElement('img');
-		const pictures = ["green.png","green.png","green.png","green.png","green.png","green.png"]
+		const pictures = ["green.png", "green.png", "green.png", "green.png", "green.png", "green.png"]
 		trim.classList.add("trim");
 		varients.classList.add("varients");
 		trim.setAttribute("id", data.trims[i].name);
-		
-	
+
+
 		const varient = document.createElement('h3');
 		const soulId = document.createElement('li');
 		const soulName = document.createElement('li');
@@ -111,15 +122,15 @@ async function Data() {
 		const soulMsrp = document.createElement('li');
 
 		varient.innerHTML = data.trims[i].name;
-		soulId.innerHTML ="Id : " + data.trims[i].id;
-		soulName.innerHTML ="Varient : " + data.trims[i].name;
-		soulDesc.innerHTML ="Engine : " + data.trims[i].description;
-		soulMsrp.innerHTML ="MSRP : $" + data.trims[i].msrp;
-		soulInvoice.innerHTML ="Invoice : $"+data.trims[i].invoice;
+		soulId.innerHTML = "Id : " + data.trims[i].id;
+		soulName.innerHTML = "Varient : " + data.trims[i].name;
+		soulDesc.innerHTML = "Engine : " + data.trims[i].description;
+		soulMsrp.innerHTML = "MSRP : $" + data.trims[i].msrp;
+		soulInvoice.innerHTML = "Invoice : $" + data.trims[i].invoice;
 
-	
-		img.src ="images/"+pictures[i];
-		
+
+		img.src = "images/" + pictures[i];
+
 		root.appendChild(trim);
 		trim.appendChild(varients);
 		varients.appendChild(ul);
@@ -134,6 +145,7 @@ async function Data() {
 }
 
 Data();
+
 
 
 
