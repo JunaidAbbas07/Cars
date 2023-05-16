@@ -308,7 +308,7 @@ nav ul li:hover a {
 .whatsapp {
     position: -webkit-sticky;
     position: fixed;
-    bottom: 10%;
+    bottom: 5%;
     right: 10%;
 
 }
